@@ -1,50 +1,17 @@
-/*override style for tab*/
-.jq-tab-wrapper {
-  padding: 0;
-}
 
-.jq-tab-menu {
-  -webkit-box-flex: 2;
-  -ms-flex: 2;
-  flex: 2;
-}
 
-.jq-tab-wrapper p {
-  font-size: 18px;
-}
-.twitch-tab-top-content .description img {
-  margin-bottom: 15px;
-}
 
-.jq-tab-menu .jq-tab-title {
-  background-color: #fff;
-  font-size: 18px;
-  padding: 12px 0;
-  border: 0;
-}
-
-.jq-tab-menu .jq-tab-title:after {
-  width: 60%;
-  display: block;
-  content: "";
-  border-bottom: 2px solid #ebe5d1;
-}
-
-.jq-tab-menu .jq-tab-title.active {
-  background-color: #fff;
-  border-left: 0;
-  text-shadow: 1px 0 0 currentColor;
-}
-
-.jq-tab-menu .jq-tab-title:hover {
-  background-color: #fff;
-  border-left: 0;
-  text-shadow: 1px 0 0 currentColor;
-}
-
-/* media query */
+/* Css for responsive */
+/* for tab device  */
 @media only screen and (max-width: 767px) {
-  .jq-tab-wrapper {
-    display: block;
+  .service-block-container {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* for mobile device */
+@media only screen and (max-width: 575px) {
+  .service-block-container {
+    grid-template-columns: auto;
   }
 }
